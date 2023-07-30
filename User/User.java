@@ -3,16 +3,16 @@ package Exceptions_Sem3_HomeTasks.User;
 public abstract class User {
     private String firstName;
     private String lastName;
-    private String Patronimic;
-    private String db;
+    private String patronimic;
+    private String birthdate;
     private int phoneNum;
-    private Character sex;
+    private String sex;
 
-    public User(String firstName, String lastName, String patronimic, String db, int phoneNum, Character sex) {
+    public User(String firstName, String lastName, String patronimic, String birthdate, int phoneNum, String sex) {
         this.firstName = firstName;
         this.lastName = lastName;
-        Patronimic = patronimic;
-        this.db = db;
+        this.patronimic = patronimic;
+        this.birthdate = birthdate;
         this.phoneNum = phoneNum;
         this.sex = sex;
     }
@@ -26,18 +26,18 @@ public abstract class User {
     }
 
     public String getPatronimic() {
-        return Patronimic;
+        return patronimic;
     }
 
-    public String getDb() {
-        return db;
+    public String getBirthdate() {
+        return birthdate;
     }
 
     public int getPhoneNum() {
         return phoneNum;
     }
 
-    public Character getSex() {
+    public String getSex() {
         return sex;
     }
 
@@ -50,18 +50,18 @@ public abstract class User {
     }
 
     public void setPatronimic(String patronimic) {
-        Patronimic = patronimic;
+        patronimic = patronimic;
     }
 
-    public void setDb(String db) {
-        this.db = db;
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
     }
 
     public void setPhoneNum(int phoneNum) {
         this.phoneNum = phoneNum;
     }
 
-    public void setSex(Character sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 }
